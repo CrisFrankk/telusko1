@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{%block content%}
+
+<h1>Ola {{name}}</h1>
+
+<form action="add" method="POST">
+
+    {%csrf_token%}
+    Escreva o primeiro número : <input type="text" name="Num1"> <br>
+    Escreva o segundo numero: <input type="text" name="Num2"> 
+
+   </div> <input type="submit" value="Calcular"> <br
+   {%endblock%}
